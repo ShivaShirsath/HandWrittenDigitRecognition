@@ -14,9 +14,13 @@ A simple neural network that recognise handwritten characters
 
 > If you need to run this on other SO you have to compile the C++ source to get an external library file (.so on linux, .dll on windows etc...) that you need to load into the java NeuralNetwork class. Search about Java JNI to get more info on how to link native libraries to java code.
 
-+ Training/Test data used in the above can be found here: https://github.com/ShivaShirsath/HandWrittenDigitRecognition/tree/dataset
++ Training/Test data used in the above can be found here: [dataset](../../tree/dataset)
+  - [t10k-images-idx3-ubyte.gz](../../raw/dataset/t10k-images-idx3-ubyte.gz)
+  - [t10k-labels-idx1-ubyte.gz](../../raw/dataset/t10k-labels-idx1-ubyte.gz)
+  - [train-images-idx3-ubyte.gz](../../raw/dataset/train-images-idx3-ubyte.gz)
+  - [train-labels-idx1-ubyte.gz](../../raw/dataset/train-labels-idx1-ubyte.gz)
 
-Pre-compiled versions can be found in [```Releases```](../../releases).
+Pre-compiled versions can be found in [```Releases```](../../releases#:~:text=HandWrittenDigitRecognition).
 
 ## How to build the application
 
@@ -41,6 +45,6 @@ double click on ```.jar``` file for execution of Application.
 - If you want this application to run on a diffent OS you need to
 compile the C++ sources. 
 
-> Source files are located into ```src/main/cpp```. You need CMake to compile the library.
+> Source files are located into [```src/main/cpp```](../../tree/master/src/main/cpp). You need CMake to compile the library.
 
 </details>
