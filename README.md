@@ -20,7 +20,7 @@ A simple neural network that recognise handwritten characters
   - [train-images-idx3-ubyte.gz](../../raw/dataset/train-images-idx3-ubyte.gz)
   - [train-labels-idx1-ubyte.gz](../../raw/dataset/train-labels-idx1-ubyte.gz)
 
-Pre-compiled versions & Executable **.jar** file can be found in # [```Releases```](../../releases#:~:text=HandWrittenDigitRecognition).
+Pre-compiled versions & Executable **.jar** file can be found in [```Releases```](../../releases#:~:text=HandWrittenDigitRecognition).
 
 ## How to build the application
 
