@@ -5,9 +5,6 @@ import net.flood.ocrnn.Const;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * @author flood2d
- */
 public class MatrixDrawer extends JPanel {
     private int[][] matrix;
 

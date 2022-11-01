@@ -6,9 +6,6 @@ import net.flood.ocrnn.Const;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * @author flood2d
- */
 public class PercentageDrawer extends JPanel implements Animation {
     private String name;
     private float initValue = 0.0f;

@@ -9,9 +9,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 
-/**
- * @author flood2d
- */
 public class CharacterCanvas extends JPanel {
     private float pencilSize = 10;
     private BufferedImage img;

@@ -3,9 +3,6 @@ package net.flood.ocrnn.ui;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * @author flood2d
- */
 public class MainFrame extends JFrame {
     private static final int FRAME_WIDTH = 700;
     private static final int FRAME_HEIGHT = 500;

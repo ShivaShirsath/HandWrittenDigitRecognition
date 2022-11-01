@@ -1,8 +1,5 @@
 package net.flood.ocrnn.util;
 
-/**
- * @author flood2d
- */
 public final class MathUtils {
     /**
      * Calculates the image of x for the logistic function. (Sigmoid function)

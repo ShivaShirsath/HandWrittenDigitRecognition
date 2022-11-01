@@ -3,9 +3,6 @@ package net.flood.ocrnn.util;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-/**
- * @author flood2d
- */
 public final class ImageUtils {
     /**
      * Create a copy of the image.

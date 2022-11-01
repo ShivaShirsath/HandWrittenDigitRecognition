@@ -2,9 +2,6 @@ package net.flood.ocrnn;
 
 import java.util.concurrent.Future;
 
-/**
- * @author flood2d
- */
 public class CharacterTrainer {
     private CharacterImageProvider imageProvider;
     private TrainListener listener;

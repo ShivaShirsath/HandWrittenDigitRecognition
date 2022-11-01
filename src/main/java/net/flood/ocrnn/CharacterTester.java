@@ -4,9 +4,6 @@ import java.io.IOException;
 import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author flood2d
- */
 public class CharacterTester {
     private CharacterImageProvider imageProvider;
     private Future<?> future;

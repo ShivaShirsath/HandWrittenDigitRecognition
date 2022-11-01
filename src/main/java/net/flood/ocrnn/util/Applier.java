@@ -1,8 +1,5 @@
 package net.flood.ocrnn.util;
 
-/**
- * @author flood2d
- */
 public interface Applier<T> {
     /**
      * Apply something to a value.

@@ -9,9 +9,6 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * @author flood2d
- */
 public class TrainingPanel extends JPanel implements CharacterTrainer.TrainListener, CharacterTester.TesterListener {
     private MainFrame frame;
     private CharacterTrainer trainer;

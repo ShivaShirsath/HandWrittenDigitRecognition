@@ -1,8 +1,5 @@
 package net.flood.ocrnn;
 
-/**
- * @author flood2d
- */
 public class Const {
     public static final int COLOR_WHITE = 0xbbbbbb;
     public static final int COLOR_GRAY = 0x3c3f41;

@@ -5,9 +5,6 @@ import net.flood.ocrnn.Const;
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * @author flood2d
- */
 public class CharacterDrawer extends JPanel {
     private Character c = null;
     private Color color;

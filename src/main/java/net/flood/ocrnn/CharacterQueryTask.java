@@ -5,9 +5,6 @@ import net.flood.ocrnn.util.ImageUtils;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 
-/**
- * @author flood2d
- */
 public class CharacterQueryTask extends Task<CharacterQueryResult> {
     private BufferedImage img;
 

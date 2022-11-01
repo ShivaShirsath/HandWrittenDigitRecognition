@@ -8,9 +8,6 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author flood2d
- */
 public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
     private MainFrame frame;
 

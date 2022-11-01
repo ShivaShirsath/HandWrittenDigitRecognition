@@ -2,10 +2,6 @@ package net.flood.ocrnn;
 
 import java.util.concurrent.Callable;
 
-/**
- * Designed to perform some work on an executor service.
- * @author flood2d
- */
 public abstract class Task<T> implements Callable<T> {
     private TaskListener<T> listener;
     private T result;

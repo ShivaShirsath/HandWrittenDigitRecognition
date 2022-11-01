@@ -5,12 +5,6 @@ import net.flood.ocrnn.util.Platform;
 
 import java.io.IOException;
 
-/**
- * A basic artificial neural network inspired by animal brains.
- * It is made by three layers (input, hidden, output layers). It is
- * backed by a native implementation written in C++.
- * @author flood2d
- */
 public class NeuralNetwork {
     static {
         Platform platform = Platform.getPlatform();

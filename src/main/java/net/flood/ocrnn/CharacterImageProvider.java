@@ -2,13 +2,6 @@ package net.flood.ocrnn;
 
 import java.io.*;
 
-/**
- * Provides training/test images in subsequent order reading from IDX format files. <p>
- * A simply custom IDX decoder is used to parse files.
- * <a href="http://yann.lecun.com/exdb/mnist/">Here</a> you can find more info on how files are parsed
- * in the section 'File formats for the mninst database'</p>
- * @author flood2d
- */
 public class CharacterImageProvider implements Closeable {
     private DataInputStream labelDis;
     private DataInputStream imageDis;

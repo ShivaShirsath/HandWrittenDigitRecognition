@@ -6,9 +6,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author flood2d
- */
 public class AnimationTimer extends Timer implements ActionListener {
     private static final int ANIMATION_DELAY = 30; //millis
     private final List<Animation> animations = new ArrayList<>();

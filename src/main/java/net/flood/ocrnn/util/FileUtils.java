@@ -5,9 +5,6 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import java.awt.*;
 import java.io.File;
 
-/**
- * @author flood2d
- */
 public class FileUtils {
     public static String getFileExtension(File file) {
         String parts[] = file.getName().split("\\.");

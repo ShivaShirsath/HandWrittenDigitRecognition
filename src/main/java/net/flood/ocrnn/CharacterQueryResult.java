@@ -1,8 +1,5 @@
 package net.flood.ocrnn;
 
-/**
- * @author flood2d
- */
 public class CharacterQueryResult {
     public double[] confidences;
 
