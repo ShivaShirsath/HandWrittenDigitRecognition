@@ -98,8 +98,6 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
                             layout.createParallelGroup()
                                 .addGroup(layout.createSequentialGroup()
                                         .addComponent(charCanvas, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                        .addGap(20)
-                                        .addComponent(loadImageButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                                         .addComponent(clearCanvasButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                         )
                                 .addGroup(
@@ -108,7 +106,8 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
                                         .addGap(20)
                                         .addComponent(confidenceLabel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                 )
-                                .addComponent(percentageDrawerContainer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                .addComponent(percentageDrawerContainer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                )
                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(trainButton)
                         .addGap(20);
