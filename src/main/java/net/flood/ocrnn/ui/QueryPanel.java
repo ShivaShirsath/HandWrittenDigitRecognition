@@ -82,30 +82,36 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
                                 .addGroup(layout.createSequentialGroup()
                                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(trainButton))
-                        ).addGap(20));
+                        ).addGap(20);
 
         layout.setVerticalGroup(
                 layout.createSequentialGroup()
                         .addGap(20)
-                        .addGroup(layout.createParallelGroup()
+                        .addGroup(
+                            layout.createParallelGroup()
                                 .addComponent(inputTitleLabel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                 .addComponent(outputTitleLabel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                .addComponent(resutlsTitleLabel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                .addComponent(resutlsTitleLabel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                        )
                         .addGap(20)
-                        .addGroup(layout.createParallelGroup()
+                        .addGroup(
+                            layout.createParallelGroup()
                                 .addGroup(layout.createSequentialGroup()
                                         .addComponent(charCanvas, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                         .addGap(20)
                                         .addComponent(loadImageButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(clearCanvasButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
+                                        .addComponent(clearCanvasButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                        )
+                                .addGroup(
+                                    layout.createSequentialGroup()
                                         .addComponent(charDrawer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                         .addGap(20)
-                                        .addComponent(confidenceLabel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(confidenceLabel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                )
                                 .addComponent(percentageDrawerContainer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(trainButton)
-                        .addGap(20));
+                        .addGap(20);
     }
 
     @Override
