@@ -28,7 +28,7 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
         loadImageButton = new JButton("Load images");
         loadImageButton.setPreferredSize(new Dimension(CHAR_WINDOW_SIZE, 15));
         clearCanvasButton = new JButton("Clear");
-        clearCanvasButton.setPreferredSize(new Dimension(CHAR_WINDOW_SIZE, 15));
+        clearCanvasButton.setPreferredSize(new Dimension(CHAR_WINDOW_SIZE, 1));
         confidenceLabel = new JLabel("Confidence: ?");
         inputTitleLabel = new JLabel("INPUT");
         inputTitleLabel.setFont(inputTitleLabel.getFont().deriveFont(Const.TITLE_FONT_SIZE));
@@ -68,6 +68,7 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
                         .addGroup(layout.createParallelGroup(GroupLayout.Alignment.CENTER)
                                 .addComponent(inputTitleLabel)
                                 .addComponent(charCanvas, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                .addComponent(loadImageButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                                 .addComponent(clearCanvasButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                         .addGap(20)
                         .addGroup(layout.createParallelGroup(GroupLayout.Alignment.CENTER)
@@ -95,11 +96,8 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
                                 .addGroup(layout.createSequentialGroup()
                                         .addComponent(charCanvas, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                         .addGap(20)
-                                        .addComponent(clearCanvasButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                        .addComponent(charDrawer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-                                        .addGap(20)
                                         .addComponent(loadImageButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(clearCanvasButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                                 .addGroup(layout.createSequentialGroup()
                                         .addComponent(charDrawer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                         .addGap(20)
