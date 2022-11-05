@@ -25,8 +25,10 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
         charCanvas.setPreferredSize(new Dimension(CHAR_WINDOW_SIZE, CHAR_WINDOW_SIZE));
         charDrawer = new CharacterDrawer();
         charDrawer.setPreferredSize(new Dimension(CHAR_WINDOW_SIZE, CHAR_WINDOW_SIZE));
+        loadImageButton = new JButton("Load images");
+        loadImageButton.setPreferredSize(new Dimension(CHAR_WINDOW_SIZE, 15));
         clearCanvasButton = new JButton("Clear");
-        clearCanvasButton.setPreferredSize(new Dimension(CHAR_WINDOW_SIZE, 30));
+        clearCanvasButton.setPreferredSize(new Dimension(CHAR_WINDOW_SIZE, 15));
         confidenceLabel = new JLabel("Confidence: ?");
         inputTitleLabel = new JLabel("INPUT");
         inputTitleLabel.setFont(inputTitleLabel.getFont().deriveFont(Const.TITLE_FONT_SIZE));
@@ -97,6 +99,10 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
                                 .addGroup(layout.createSequentialGroup()
                                         .addComponent(charDrawer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
                                         .addGap(20)
+                                        .addComponent(loadImageButton, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                        .addComponent(charDrawer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                        .addGap(20)
                                         .addComponent(confidenceLabel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                                 .addComponent(percentageDrawerContainer, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -138,6 +144,7 @@ public class QueryPanel extends JPanel implements CharacterCanvas.DrawListener {
     private JLabel outputTitleLabel;
     private JLabel resutlsTitleLabel;
     private JButton trainButton;
+    private JButton loadImageButton;
     private List<PercentageDrawer> percentageDrawerList = new ArrayList<>();
     private JPanel percentageDrawerContainer;
     private AnimationTimer animTimer = new AnimationTimer();
